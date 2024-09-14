@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Header */
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #25c26b;
+    color: #fff;
+    padding: 10px 0;
+    /* Padding atas dan bawah 10px, padding kiri dan kanan 0 */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    /* Lebar maksimum container */
+    margin: 0 auto;
+    /* Centering container */
+    padding: 0 20px;
+    /* Padding kiri dan kanan 20px */
+}
+
+header a ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .logo {
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 0;
+    font-size: 15px;
+}
+
+a.logo:hover {
+    color: #fff;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav {
+        display: none;
+    }
+}
+
+/*end header*/
+
+
+/*Klik navbar*/
+section.section {
+    padding: 70px 0;
+    background-color: #ffffff;
+}
+
+/*end klik navbar*/
+
+/* Gambar penerimaan siswa baru */
+section .foto {
+    padding: 0;
+    width: 100%;
+}
+
+section img.foto {
+    width: 100%;
+}
+
+/* Daftar penerimaan siswa baru */
+section.daftar {
+    padding-left: 90px;
+    margin-top: -35%;
+    padding-bottom: 240px;
+    font-family: Georgia, serif;
+}
+
+section.daftar h2 {
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+section.daftar h2.font1 {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+section.daftar h2.font2 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+section.daftar h2.font3 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+section.daftar h2.font4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+section.daftar a {
+    color: #fff;
+    margin-left: 50px;
+    padding: 7px 20px;
+    background-color: #25c26b;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+section.daftar a:hover {
+    color: #fff;
+    border-color: #ffffff;
+    background-color: #3c6dc9;
+}
+
+section.daftar a.login {
+    margin-left: 20px;
+    background-color: #255cc2;
+}
+
+section.daftar a.login:hover {
+    background-color: #48c27f;
+}
+
+/* Media queries untuk tablet */
+@media (min-width: 600px) and (max-width: 899px) {
+    section.daftar {
+        padding-left: 20px;
+        /* Sesuaikan margin-top untuk tablet */
+        padding-bottom: 100px;
+    }
+
+    section.daftar h2.font1 {
+        font-size: 16px;
+    }
+
+    section.daftar h2.font2,
+    section.daftar h2.font3 {
+        font-size: 36px;
+    }
+
+    section.daftar h2.font4 {
+        font-size: 20px;
+    }
+
+    section.daftar a {
+        margin: 10px 20px;
+        /* Pusatkan tombol dengan jarak lebih baik */
+    }
+}
+
+/* Media queries untuk smartphone */
+@media (max-width: 599px) {
+    section.daftar {
+        padding-left: 10px;
+        padding-bottom: 50px;
+    }
+
+    section.daftar h2.font1 {
+        font-size: 14px;
+    }
+
+    section.daftar h2.font2,
+    section.daftar h2.font3 {
+        font-size: 24px;
+    }
+
+    section.daftar h2.font4 {
+        font-size: 18px;
+    }
+
+    section.daftar a {
+        margin: 10px auto;
+        /* Pusatkan tombol untuk smartphone */
+        padding: 8px 16px;
+    }
+}
+
+/* end Gambar penerimaan siswa baru */
+
+
+/*Profil*/
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-item h5 {
+    margin: 0;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*End Profil*/
+
+
+/*Galery*/
+#ekstrakurikuler {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#ekstrakurikuler h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    /* Ukuran font judul */
+}
+
+.ekstra-item {
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    /* Menghilangkan border default */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Menambahkan shadow */
+    overflow: hidden;
+    /* Menghindari konten yang meluap dari kartu */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Memastikan gambar menyesuaikan dalam area yang diberikan */
+}
+
+.card-body {
+    padding: 10px;
+    /* Mengurangi padding di dalam kartu */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+}
+
+.card-title,
+.card-text {
+    margin: 0;
+    /* Mengatur margin untuk teks */
+    word-wrap: break-word;
+    /* Memecah kata panjang untuk menghindari overflow */
+    overflow-wrap: break-word;
+    /* Untuk memecah kata panjang */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    width: 100%;
+    /* Menyesuaikan lebar teks dengan lebar kartu */
+}
+
+.card-title {
+    font-size: 1.125rem;
+    /* Ukuran font judul */
+    margin-bottom: 5px;
+    /* Margin bawah */
+}
+
+.card-text {
+    font-size: 0.875rem;
+    /* Ukuran font keterangan */
+    margin-bottom: 5px;
+    /* Margin bawah */
+}
+
+.row {
+    margin: 0;
+    /* Menghilangkan margin default */
+}
+
+.col-lg-3,
+.col-md-6,
+.col-sm-12 {
+    padding: 0 15px;
+    /* Menambahkan padding horizontal */
+}
+
+/*Galery*/
+
+/* Pengumuman */
+#pengumuman {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#pengumuman h3 {
+    margin-bottom: 20px;
+}
+
+#pengumuman h5 {
+    margin-top: 20px;
+}
+
+#pengumuman p {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    /* Menambahkan ini untuk memecah kata yang panjang */
+}
+
+#pengumuman hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer h2 {
+    font-size: 24px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0 0 10px 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Styles for social icons */
+footer table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -15px;
+}
+
+footer div .facebook a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer div .facebook a:hover {
+    color: #4267B2;
+    /* Facebook blue */
+}
+
+footer div .youtube a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer div .youtube a:hover {
+    color: #b24242;
+}
+
+.ektra {
+    max-width: 8px;
+    /* ubah ukuran gambar sesuai kebutuhan */
+    height: 20px;
+}
+
+/*end footer*/
+
+
+
+/*Halaman login & registrasi*/
+.container-L {
+    max-width: 400px;
+    margin: 150px auto 0;
+    /* Tambahkan margin-top 20px */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-L h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container-L form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-L input[type="text"],
+.container-L input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.container-L button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #25c247;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container-L button[type="submit"]:hover {
+    background-color: #25c26b;
+}
+
+
+/**/
+/* Styling for the form */
+/* CSS untuk styling form input data siswa dan orang tua */
+
+.input {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h3.datado {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.disabled-link {
+    pointer-events: none;
+    color: #999;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .input {
+        width: 90%;
+    }
+}
